@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ccbd816a07b206f971042295b899d1ba",
+    "content-hash": "45adffaefac6f6c4b958bbe56382b5f1",
     "packages": [
         {
             "name": "brick/math",
@@ -896,6 +896,42 @@
                 }
             ],
             "time": "2022-08-28T14:45:39+00:00"
+        },
+        {
+            "name": "hightower/id-generator",
+            "version": "dev-master",
+            "dist": {
+                "type": "path",
+                "url": "packages/Hightower/IDGenerator",
+                "reference": "f152174d48c17ea502804d8068d1e9345aaf1eb3"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Hightower\\IdGenerator\\IDGeneratorServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Hightower\\IdGenerator\\": "src/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Alister",
+                    "email": "alister.messi@gmail.com"
+                }
+            ],
+            "description": "Sequential ID Generator for table column",
+            "transport-options": {
+                "symlink": true,
+                "relative": true
+            }
         },
         {
             "name": "laravel/framework",
@@ -7816,7 +7852,9 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": [],
+    "stability-flags": {
+        "hightower/id-generator": 20
+    },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {

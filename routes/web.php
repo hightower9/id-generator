@@ -1,5 +1,7 @@
 <?php
 
+use App\Models\User;
+use Hightower\IdGenerator\IDGenerator;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -15,4 +17,8 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('welcome');
+});
+
+Route::get('/id', function () {
+    return IDGenerator::IDGenerate(new User, 'code', 6, 'ITI-');
 });

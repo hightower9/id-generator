@@ -1,0 +1,24 @@
+{
+    "name": "hightower/id-generator",
+    "description": "Sequential ID Generator for table column",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Hightower\\IdGenerator\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Alister",
+            "email": "alister.messi@gmail.com"
+        }
+    ],
+    "require": {},
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Hightower\\IdGenerator\\IDGeneratorServiceProvider"
+            ]
+        }
+    }
+}
